@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>PaceTMK Homepage</title>
+  </head>
+  <body>
+
+    <!-- navbar section of my website -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="/">PaceTMK</a> -->
+          <img style="width: 80px; height: 50px; " src="/Images/pacelogos.jpeg" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About us</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="/courses.html">Courses</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact us</a>
+              </li>
+
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->50%
+
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="false">Contact us</a>
+              </li> -->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal" >Login</button>
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal" >Sign Up</button>
+            </div>
+          </div>
+          <img style="width: 80px; height: 50px; border-radius: 50% ;" src="/Images/pakistan.gif" alt="">
+        </div>
+      </nav>
+
+
+
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to PaceTMK</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Register to PaceTMK</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="cexampleInputPassword1">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+           
+          <button type="submit" class="btn btn-primary">Creat Account</button>
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+
+   
+     <!-- Alerts section  -->
+        <!-- <div class="alert alert-danger" role="alert">
+          <h5>Note: New Admissions are Open</h5>
+        </div> -->
+        <!-- <div class="alert alert-danger alert-dismissible fade show my-0" role="alert">
+          <strong>Note: </strong> New Admissions Are Opened!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+         -->
+        <!-- Alerts section ends here -->
+
+        <div class="alert alert-danger alert-dismissible fade show my-0" role="alert">
+          <strong>Note: </strong> New Admissions Are Opened!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        
+
+      <!-- crousel section starts here -->
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Images/banner2.jpg" class="d-block w-100" alt="">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Welcome to PaceTMK</h1>
+              <p>The purpose of Pace Computer Institute is to give Advance IT information to the student. This center is running since 1999.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/laptop.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Welcome to PaceTMK</h1>
+              <p>The purpose of Pace Computer Institute is to give Advance IT information to the student. This center is running since 1999.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/bg2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Welcome to PaceTMK</h1>
+              <p>The purpose of Pace Computer Institute is to give Advance IT information to the student. This center is running since 1999.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- crousel section ends here -->
+
+
+      
+
+
+
+
+ <!-- services section  -->
+
+ <div class="container section">
+  <div class="row">
+      <div class="col-md-12">
+          <h2 class="section-head ">Our Services</h2>
+      </div>
+      <!-- <div class="col-sm-6 col-md-4">
+          <div class="service-box">
+             <img src="/Images/android.png" alt="">
+             <h3>Android</h3>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, aut.</p>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+          <div class="service-box">
+            
+              <img src="/Images/website.png" alt="">
+              <h3>Web Development</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, at!</p>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+          <div class="service-box">
+             
+              <img src="/Images/office.png" alt="">
+              <h3>MS Office</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, aut?</p>
+          </div>
+      </div> -->
+  </div>
+</div>
+
+<!-- services section ends here -->
+
+
+<!-- services 2 section -->
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">2 Months</strong>
+            <h3 class="mb-0">Complete Wordpress with Project</h3>
+            <div class="mb-1 text-muted">Contents</div>
+            <p class="card-text mb-auto"><b>Installation</b> <br><b>Plugins</b> <br><b>Elementor</b>
+            <br><b>Project</b></p>
+            <a href="/courses.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img style="width: 150px; height: 150px; margin-top: 50px;" class="img-fluid" src="/Images/wordpress.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">1 Year Regular Course</strong>
+            <h3 class="mb-0">Programming Courses</h3>
+            <div class="mb-1 text-muted">Contents</div>
+            <p class="mb-auto"><b>CPP</b> <br><b>Introduction to Java</b><br><b>Visual Basic</b>
+            <br><b>FoxPro</b><br><b>Oracle database</b></p>
+            <a href="/courses.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img style="width: 250px; height: 300px;" class="img-fluid" src="/Images/java.png" width="200" height="250" alt="">
+          </div>
+        </div>
+      </div>
+    </div>    
+
+  </div>
+
+
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">4 Months</strong>
+            <h3 class="mb-0">Ms Office</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto"><b>Ms Word</b> <br><b>Ms Excel</b> <br><b>Ms PowerPoint</b> <br><b>Ms Access</b></p>
+            <a href="/courses.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img style="width: 150px; margin-top: 30px;" class="img-fluid" src="/Images/office.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Designing</strong>
+            <h3 class="mb-0">Designing</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            
+            <p class="mb-auto"><b>Adobe Photoshop</b> <br><b>Courel Draw</b><br><b>Flash</b> <br>
+            <b>Blender 3D</b></p>
+            <a href="/courses.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="img-fluid" src="/Images/website.png" width="200" height="250" alt="">
+          </div>
+        </div>
+      </div>
+    </div>    
+
+  </div>
+<!-- ended  -->
+
+ <!-- testimonials section  -->
+
+ <div id="testimonials" class="section">
+  <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+             <h2 class="section-head">Founded By</h2>
+         </div>
+
+         <div class="col-md-4">
+             <div class="testimonial">
+                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, similique.</p> -->
+                 <img style="border-radius: 50%; width: 40%; height: 40%; " src="/Images/sarfaraz.jpg" alt="">
+                 <div style="font-weight: bold;" class="author">Hafiz Sarfaraz Khan</div>
+                 <div style="margin-left: 40px;" class="author-company">Owner</div>
+             </div>
+         </div>
+
+         <div class="col-md-4">
+             <div class="testimonial">
+                 <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ad.</p> -->
+                 <img style="border-radius: 50%; width: 40%; height: 40%;" src="/Images/aijaz.jpg" alt="">
+                 <div style="margin-left: 30px; font-weight: bold;" class="author">Aijaz Ahmed</div>
+                 <div style="margin-left: 40px;" class="author-company">Founder</div>
+             </div>
+         </div>
+
+         <div class="col-md-4">
+          <div class="testimonial">
+              <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ad.</p> -->
+              <img style="border-radius: 50%; height: 150px; width: 150px;" src="/Images/saira.jpg" alt="">
+              <div style="margin-left: 30px; font-weight: bold;" class="author">Saira Shah</div>
+              <div style="margin-left: 30px;" class="author-company">Ex Principal</div>
+          </div>
+      </div>
+
+      </div>
+  </div>
+</div>
+
+
+<!-- testimonial section ends here  -->
+
+
+
+
+<!-- gallery section here  -->
+
+<div class="container section">
+  <div class="row">
+      <div class="col-md-12">
+          <h2 class="section-head ">Gallery Section</h2>
+      </div>
+
+<div class="container mt-5 mb-5 justify-content-center align-items-center">
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div  class="col">
+      <div class="card shadow-sm">
+        <img style="border: 1px solid grey;"  class="img-fluid" src="/Images/pacerepo1.jpeg" width="500" height="500" alt="">
+        <div class="card-body">
+          <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img style="border: 1px solid grey;" class="img-fluid" src="/Images/pacerepo4.jpeg" width="500" height="500" alt="">
+        <div class="card-body">
+          <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  class="col">
+      <div class="card shadow-sm">
+        <img style="border: 1px solid grey;" class="img-fluid" src="/Images/pacerepo3.jpeg" width="500" height="500" alt="">
+
+        <div class="card-body">
+          <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img style="width: 400px; height: 250px; border: 1px solid grey;" class="img-fluid" src="/Images/pacerepo8.jpeg" width="500" height="500" alt="">
+        <div class="card-body">
+          <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img style="width: 400px; height: 250px; border: 1px solid grey;" class="img-fluid" src="/Images/pacerepo11.jpeg" width="500" height="500" alt="">
+
+        <div class="card-body">
+          <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img style="width: 400px; height: 250px; border: 1px solid grey;" class="img-fluid" src="/Images/pacerepo10.jpeg" width="500" height="500" alt="">
+
+        <div class="card-body">
+          <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img style="width: 400px; height: 250px; border: 1px solid grey;" class="img-fluid" src="/Images/pacerepo7.jpeg" width="500" height="500" alt="">
+
+        <div class="card-body">
+          <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img style="width: 400px; height: 250px; border: 1px solid grey;" class="img-fluid" src="/Images/pacerepo9.jpeg" width="500" height="500" alt="">
+
+        <div class="card-body">
+          <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img style="width: 400px; height: 250px; border: 1px solid grey;" class="img-fluid"  src="/Images/pacerepo12.jpeg" width="500" height="500" alt="">
+
+        <div class="card-body">
+          <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- footer section 0 -->
+<div id="footer-sidebar" >
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-6 col-md-4">
+              <div class="footer-widget">
+                  <h4>About Company</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facilis consequuntur repellat magni eligendi repellendus?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quisquam.</p>
+              </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+              <div class="footer-widget" ud="myid">
+                  <h4>Latest News</h4>
+                  <ul class="Links">
+                      <li><a href="">Home</a></li>
+                      <li><a href="/about.html">About US</a></li>
+                      <li><a href="/courses.html">Cources</a></li>
+                      <li><a href="/contact.html">Contact Us</a></li>
+                  </ul>
+              </div>
+
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+              <div class="footer-widget">
+                  <h4>Organization Location</h4>
+                 <address>
+                     <b>Pace Computer Institute, Inc.</b> <br>
+                     Near Aqsa Masjid, Station Road Dist Tando Muhammad Khan <br>
+                     Sindh, Pakistan <br>
+                     Phone: (+92) 3332801489 <br>
+                     Phone: (+92) 3313369304 <br>
+                     Email: fk055775@gmail.com
+                 </address>
+
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+  <div id="footer" >
+      <div class="container">
+          <div class="row ">
+              <div class="col-md-6 ">Copyright@2021 PaceTMK.com</div>
+              <div class="col-md-6">
+                  <ul id="social-links" class="float-md-right">
+                      <li><a href="https://www.facebook.com/prinxefaisal.sarfaraz.3" target="blank" ><img src="/Icons/facebook-logo-24.png" alt=""></a></li>
+                      <li><a href="https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg" target="blank" ><img src="/Icons/youtube.png" alt=""></a></li>
+                      <li><a href="https://github.com/FAISALKHAN34" target="blank" ><img src="/Icons/github.png" alt=""></a></li>
+                      <li><a href="" ><img src="/Icons/instagram.png" alt=""></a></li>
+                      <li><a href="" ><img src="/Icons/twitter-logo-24.png" alt=""></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
